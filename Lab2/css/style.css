@@ -1,0 +1,13 @@
+body {
+    background-color: goldenrod;
+}
+a#font1 {
+    font-family: 'Krona One', sans-serif;
+}
+a#ftcl {
+    font-family: 'Yellowtail', cursive;
+    color: red;
+}
+a#blue {
+    color: dodgerblue;
+}
