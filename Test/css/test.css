@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.animation {
+    width: 147px;
+  height: 25px;
+  background-color: yellow;
+  position: relative;
+  animation-name: first;
+  animation-duration: 4s;
+}
+
+@keyframes first {
+  0% {background-color: yellow; left:0px; top:0px;}
+  25% {background-color: orange; left:200px; top:0px;}
+  50% {background-color: orangered; left:200px; top:200px;}
+  75% {background-color: orange; left:0px; top:200px;}
+  100% {background-color: yellow; left:0px; top:0px}
+}
