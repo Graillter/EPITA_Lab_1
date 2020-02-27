@@ -1,8 +1,13 @@
 body {
     margin: 0;
+    background: url(Back2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-ul {
+ul.inline {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -21,23 +26,41 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #555;
+  background-color: grey;
   color: white;
 }
 
 .animation {
-    width: 147px;
+    width: 150px;
   height: 25px;
-  background-color: yellow;
+  color: white;
   position: relative;
   animation-name: first;
   animation-duration: 4s;
 }
 
+div {
+    color: white;
+}
+
 @keyframes first {
-  0% {background-color: yellow; left:0px; top:0px;}
-  25% {background-color: orange; left:200px; top:0px;}
-  50% {background-color: orangered; left:200px; top:200px;}
-  75% {background-color: orange; left:0px; top:200px;}
-  100% {background-color: yellow; left:0px; top:0px}
+  0% {color: white; left:0px; top:0px;}
+  25% {color: red; left:150px; top:0px;}
+  50% {color: blue; left:300px; top:0px;}
+  75% {color: red; left:100px; top:0px;}
+  100% {color: white; left:0px; top:0px}
+}
+
+ol.a {
+    list-style-type: decimal;
+}
+
+.a li{
+    padding: 7px 0;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
