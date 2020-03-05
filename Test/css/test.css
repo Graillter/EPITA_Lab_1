@@ -39,6 +39,24 @@ li a:hover:not(.active) {
   animation-duration: 4s;
 }
 
+.animation2{
+    width: 300px;
+  height: 25px;
+  color: white;
+  position: relative;
+  animation-name: second;
+  animation-duration: 4s;
+}
+
+.animation3{
+    width: 400px;
+  height: 25px;
+  color: white;
+  position: relative;
+  animation-name: third;
+  animation-duration: 4s;
+}
+
 div {
     color: white;
 }
@@ -47,8 +65,24 @@ div {
   0% {color: white; left:0px; top:0px;}
   25% {color: red; left:150px; top:0px;}
   50% {color: blue; left:300px; top:0px;}
+  75% {color: red; left:150px; top:0px;}
+  100% {color: white; left:0px; top:0px}
+}
+
+@keyframes second {
+  0% {color: white; left:0px; top:0px;}
+  25% {color: red; left:100px; top:0px;}
+  50% {color: blue; left:200px; top:0px;}
   75% {color: red; left:100px; top:0px;}
   100% {color: white; left:0px; top:0px}
+}
+
+@keyframes third {
+  0% {color: white; left:0px; top:0px;}
+  25% {color: red; left:200px; top:100px;}
+  50% {color: blue; left:0px; top:200px;}
+  75% {color: red; left:200px; top:300px;}
+  100% {color: white; left:0px; top:400px}
 }
 
 ol.a {
